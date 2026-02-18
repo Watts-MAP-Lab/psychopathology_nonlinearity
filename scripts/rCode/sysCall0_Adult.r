@@ -70,8 +70,8 @@ if(!file.exists(file.out)){
   result_case <- readRDS(file.out)
 }
 
-summary(do.call(rbind, 
-                args = get_sampler_params(result_case, inc_warmup = FALSE)),
-        digits = 2)
-## Now do the logLik loo call here
-loo::elpd(result_case)
+# summary(do.call(rbind, 
+#                 args = get_sampler_params(result_case, inc_warmup = FALSE)),
+#         digits = 2)
+# ## Now do the logLik loo call here
+# loo::elpd(result_case)
